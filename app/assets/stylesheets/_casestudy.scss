@@ -1,0 +1,26 @@
+
+
+
+
+/* #Layout
+================================================== */
+
+.vrg_casestudy .vrg_header { width:100%;padding: 10px 0 10px 0;background-color:$pink;position:fixed;z-index:2;top:0;}
+.vrg_casestudy .vrg_header .header-logo a { font-size:50px;color:#fff !important;}
+.vrg_casestudy .vrg_header .header-logo a:hover { text-decoration:none;}
+.vrg_casestudy .vrg_header-description { color: #fff;font-size:18px;margin:14px 0 0 12px;}
+.vrg_casestudy-focal { width:100%;height:120px;margin-top:1px;position:fixed;top:70px;z-index:0;}
+.vrg_casestudy-overview { background-color:#fff;margin-top:431px;text-align:center;z-index:1;position:relative;}
+.vrg_casestudy-concept { background-color: #f7f7f7;text-align:center;z-index:1;position:relative;}
+.vrg_casestudy-finalproduct { background-color: #ffffff;text-align:center;z-index:1;position:relative;}
+.vrg_casestudy-overview h2, .vrg_casestudy-concept h2, .vrg_casestudy-finalproduct h2 { margin-bottom: 40px;}
+.vrg_casestudy-footer { width:100%;height:40px;background-color:#343434;color:#fff;font-size: 16px;color: #afafaf;padding: 45px 0 20px 0}
+.vrg_casestudy-footer .three { text-align:right;}
+.vrg_casestudy-footer a.vrg-icon { font-size: 28px; color:#afafaf;display:inline;margin-right:14px;}
+.vrg_casestudy-footer a:last-child { margin-right:0;}
+.vrg_casestudy-footer a.vrg-icon:hover { color:#fff;text-decoration: none !important;}
+
+/* Case study specific 
+================================================== */
+.vrg_casestudy-focal { background-color:#FFFFFF;}
+.casestudy-kfc .vrg_casestudy-focal { background: #444444 url("work-kfc-tile.png") repeat center bottom;background-size: 250px}

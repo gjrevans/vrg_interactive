@@ -5,6 +5,5 @@ class PagesController < ApplicationController
 
   def casestudy_kfc
     render layout: "casestudy"
-
   end
 end

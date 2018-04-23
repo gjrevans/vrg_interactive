@@ -1,0 +1,158 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+/* #Layout
+================================================== */
+.l-section {
+  @each $size, $value in $content-spacing {
+    &--#{$size} {
+      padding: $value 0 ;
+    }
+  }
+  @each $color, $value in $theme-colors {
+    &--#{$color} {
+      background-color: $value;
+    }
+  }
+  &--home {
+    @extend .sticky-top;
+    text-align: center;
+    z-index: -1;
+  }
+  &--navigation {
+    @extend .sticky-top;
+  }
+}
+
+.m-navigation {
+  &__logo {
+    width: 3rem;
+  }
+  ul {
+
+  }
+}
+//
+// .vrg_whatwedo,
+// .vrg_work,
+// .vrg_aboutus,
+// .vrg_contact {
+//   padding: 120px 0;
+// }
+//
+// .vrg_header {
+//   background-color: $primary;
+//   position: fixed;
+//   width: 100%;
+//   min-height: 30rem;
+//   padding: 50px 0;
+// }
+// .vrg_header-logo {
+//   text-align:center;
+//   font-size:80px;
+//   color:#fff !important;
+// }
+// .vrg_header-text p {
+//   font-size: 35px;
+//   font-weight:300;
+//   text-align:center;
+//   margin-top:45px;
+//   color:#fff;
+//   font-family: 'Roboto', sans-serif;
+//   line-height: 1.4em !important;
+// }
+//
+// .vrg_bodycontent { width:100%;position:absolute;top:332px;background:#fff;}
+// .vrg_bodycontent.fixednav { margin-top: 60px;}
+//
+//
+// /* #Navigation
+// ================================================== */
+// .vrg_nav {
+//   text-align:center;
+//   background-color: $gray-800;
+//   padding: 10px 0 10px 0;
+//   width:100%;
+//   top:-1px;
+//   z-index:2;
+//   position: relative;
+//   &ul {
+//     margin: 14px 0 14px 0
+//   }
+//   &li {
+//     display: inline;
+//     margin-right: 20px;
+//     text-transform:uppercase;
+//     font-size: 18px;
+//     padding: 8px 10px;
+//   }
+// }
+// .vrg_nav ul {
+// }
+// .vrg_nav li { display: inline;margin-right: 20px;text-transform:uppercase;font-size: 18px;padding: 8px 10px;}
+// .vrg_nav li.last { margin-right: 0 !important;}
+// .vrg_nav li a { color: #fff;text-decoration: none;text-shadow: #298383 0 0 1px;}
+// .vrg_nav li a:hover, .vrg_nav li a.active { border-bottom: $pink 3px solid;}
+// .vrg_nav-logo { position: absolute; left:0;top:-8px;font-size:50px;color:#fff !important;opacity:0;transition: 0.2s all;}
+// .vrg_nav-logo.active { top:0px;opacity: 1.0;transition: 0.2s all;}
+//
+//
+//
+// /* #Page
+// ================================================== */
+// /* Sections */
+//
+// .vrg_whatwedo { }
+// .vrg_aboutus { background-color: #5fcece;color:#fff;min-height: 500px;position:relative;}
+// .vrg_aboutus .aboutus { margin-top: 40px;}
+// .vrg_work { min-height: 400px;}
+// .vrg_clients { background-color: #eaeaea;min-height:18px;padding:30px 0 25px 0;}
+// .vrg_contact { background-color: #3b3b3b; min-height:280px}
+//
+// /* About us */
+// .arrowLeft { position: absolute; left: 10px; top: 340px;cursor: pointer;}
+// .arrowRight { position: absolute; right: 10px; top: 340px;cursor: pointer;}
+// .arrowRight:hover > svg > path, .arrowLeft:hover > svg > path{ fill: #f7f7f7}
+// #aboutus li { position:absolute;top:118px;display:none;}
+// #aboutus li .brokenheartBackground { background: url("about-brokenhearts-frame.png") no-repeat center right;background-size:260px}
+// #aboutus li .brokenheartHeart { float:right;width:200px;height:200px;margin: 37px 62px 0 0;background: url("about-brokenhearts-heart.png") no-repeat center right;background-size:140px}
+// #aboutus li .creativemachinesBackground { background: url("about-creativemachines.png") no-repeat right 36px;background-size:260px; position: relative;height: 360px;width:380px;}
+// #aboutus li .creativemachinesPulley1 { position:absolute;width:49px;height:49px;top: 98px;left:122px;background: url("about-creativemachines-pulley1.png") no-repeat center center;background-size:49px}
+// #aboutus li .creativemachinesPulley2 { position:absolute;width:40px;height:40px;top:193px;left:199px;background: url("about-creativemachines-pulley1.png") no-repeat center center;background-size:40px}
+// #aboutus li .bubbles { position: absolute;width:121px;height:49px;bottom:190px;left:159px;z-index:1;}
+// #aboutus li .bubble1 { position: absolute; width: 10px;height:10px;border-radius:80px;bottom:8px;left:40px;background-color: #f0818f;}
+// #aboutus li .bubble2 { position: absolute; width: 4px;height:4px;border-radius:80px;bottom:18px;left:60px;background-color: #f0818f;}
+// #aboutus li .bubble3 { position: absolute; width: 6px;height:6px;border-radius:80px;bottom:6px;left:55px;background-color: #f0818f;}
+// #aboutus li .bubble4 { position: absolute; width: 8px;height:8px;border-radius:80px;bottom:18px;left:73px;background-color: #f0818f;}
+// #aboutus li .bubble5 { position: absolute; width: 3px;height:3px;border-radius:80px;bottom:12px;left:93px;background-color: #f0818f;}
+//
+//
+// /* Work */
+// #ourwork { position: relative;}
+// #ourwork .columns.one { height: 210px;width:20px;}
+// .work-items { display:none;}
+// .work-items.current { display:block;}
+// .work-item { margin: 0 0 70px 0;width:440px !important;cursor:pointer;}
+// .preview { height: 200px;width:100%;position:relative;overflow:hidden;}
+// .work-caption { width:100%;position:absolute;bottom:0px;left:0;background-color:rgba(0, 0, 0, 0.7);opacity:0;padding: 20px;box-sizing:border-box; }
+// .work-caption p, .work-caption strong {font-size: 16px;color:#fff !important}
+// .work-caption p { margin-bottom: 5px;}
+// #ourwork .arrowLeft > svg > path {fill: #b6b6b6; }
+// #ourwork .arrowLeft:hover > svg > path {fill: #959595; }
+// #ourwork .arrowLeft { display:none;top:440px;}
+// .work-detail { float:left;display:none;font-size:18px;}
+// .work-detail table { margin-bottom: 30px;}
+// .work-detail td { padding: 0 0 6px 0;}
+// .work-detail td.strong { font-weight: 400;}
+// .work-detail p.detail-overview { font-size: 17px;}
+// .work-detail.current { display:block;}
+//
+// /* Clients */
+// .clients-title { float: left;margin-right:20px;padding-top:1px;}
+// .clients-list { display: inline;}
+// .clients-list li:first-child { width: 100px}
+// .clients-list li { float: left;margin: 0;width:200px;text-align:center}
+//
+// #aboutus li.current { display: block;}
