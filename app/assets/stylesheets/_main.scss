@@ -8,15 +8,12 @@
   }
   @each $color, $value in $theme-colors {
     &--#{$color} {
-      color: color-yiq(darken($value, 15%));
       background-color: $value;
+      color: color-yiq(darken($value, 15%));
+      &:not(:last-of-type) {
+        border-bottom: 1px solid darken($value, 10%);
+      }
     }
-  }
-  &--hero {
-    top: 0;
-    z-index: -1;
-    position: -webkit-sticky;
-    position: sticky;
   }
 }
 
@@ -43,7 +40,7 @@
     margin-bottom: 0;
     li {
       display: inline-block;
-      &:not(:last-child){
+      &:not(:last-child) {
         margin-right: 1rem;
       }
     }
@@ -59,6 +56,10 @@
   &__caption {
     // TODO: Add styling
   }
+}
+
+.m-client {
+  margin-bottom: 3rem;
 }
 
 /* #Custom
@@ -152,4 +153,11 @@
     bottom: 12px;
     left: 93px;
   }
+}
+
+.sticky-mc-stick-face {
+  top: 0;
+  z-index: -1;
+  position: sticky;
+  position: -webkit-sticky;
 }
