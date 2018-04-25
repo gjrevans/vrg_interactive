@@ -35,10 +35,6 @@
 	</div>
 </section>
 
-<section>
-
-</section>
-
 <section class="l-section l-section--info l-section--lg" id="aboutus">
 	<div class="container">
 		<div class="row">
@@ -95,143 +91,54 @@
 		</div>
 	</div>
 </section>
-
-<section class="vrg_work" id="ourwork">
-	<div class="arrowLeft"><%= image_tag("arrowLeft.svg", :class =>  "svg") %></div>
+<section class="l-section l-section--white l-section--lg" id="ourwork">
 	<div class="container">
-		<div class="columns sixteen">
-			<h2 class="textCentered heading">Our Work</h2>
-		</div>
-		<div class="work-items current">
-			<div class="columns eight work-item">
-				<div class="preview">
-					<%= image_tag("work-flightnetwork.png", :width =>  "440px") %>
-					<div class="work-caption">
-						<p><strong>FlightNetwork</strong></p>
-						<p>The largest flight booking website in Canada needed a full suite of applications.</p>
-					</div>
-				</div>
-			</div>
-			<div class="columns one"></div>
-			<div class="columns eight work-item" id="work-toyota">
-				<div class="preview" >
-					<%= image_tag("work-toyota.png", :width =>  "440px") %>
-					<div class="work-caption">
-						<p><strong>Toyota Canada</strong></p>
-						<p>Toyota Canada’s Corolla treasure hunt contest for both iOS and Facebook.</p>
-					</div>
-				</div>
-			</div>
-			<div class="columns eight work-item" id="work-kfc">
-				<div class="preview">
-					<%= image_tag("work-kfc.png", :width =>  "440px") %>
-					<div class="work-caption">
-						<p><strong>KFC Canada</strong></p>
-						<p>The Colonel's Club needed to branch out to mobile.</p>
-					</div>
-				</div>
-			</div>
-			<div class="columns one"></div>
-			<div class="columns eight work-item">
-				<div class="preview">
-					<%= image_tag("work-monstercat.png", :width =>  "440px") %>
-					<div class="work-caption">
-						<p><strong>Monstercat</strong></p>
-						<p>One of the fastest growing record labels for electronic music in Canada.</p>
-					</div>
-				</div>
+		<div class="row mb-4">
+			<div class="col-md-12">
+				<h2 class="text-center">Our Work</h2>
 			</div>
 		</div>
-		<div class="work-detail" id="work-toyota">
-			<div class="columns nine">
-				<div class="paging-indicators"></div>
-				<ul class="paging">
-					<li><%= image_tag("work-toyota-ss1.png", :width =>  "521px") %></li>
-					<li><%= image_tag("work-toyota-ss2.png", :width =>  "521px") %></li>
-					<li><%= image_tag("work-toyota-ss2.png", :width =>  "521px") %></li>
-				</ul>
-			</div>
-			<div class="columns seven">
-				<table>
-					<tr>
-						<td class="strong" width="30%">Date</td>
-						<td>August 2013</td>
-					</tr>
-					<tr>
-						<td class="strong">Client</td>
-						<td>Desperado / Toyota Canada</td>
-					</tr>
-					<tr>
-						<td class="strong">Project</td>
-						<td>Corolla Hunt</td>
-					</tr>
-					<tr>
-						<td class="strong">Services</td>
-						<td>Mobile Design, IA Strategy</td>
-					</tr>
-				</table>
-				<h5>Brief Overview</h5>
-				<p class="detail-overview">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras quis varius ante, at sollicitudin erat. Vivamus sem turpis, mattis ut adipiscing eget, varius venenatis metus. Quisque mollis eros vitae elit venenatis viverra. Nulla vulputate varius feugiat. Nunc nec quam malesuada, tristique metus vel, convallis felis. </p>
-				<p><a href="#">Read full case study ›</a></p>
-			</div>
-		</div>
-		<div class="work-detail" id="work-kfc">
-			<div class="columns nine">
-				<div class="paging-indicators"></div>
-				<ul class="paging">
-					<li><%= image_tag("work-kfc-ss1.png", :width =>  "521px") %></li>
-					<li><%= image_tag("work-kfc-ss2.png", :width =>  "521px") %></li>
-					<li><%= image_tag("work-kfc-ss3.png", :width =>  "521px") %></li>
-				</ul>
-			</div>
-			<div class="columns seven">
-				<table>
-					<tr>
-						<td class="strong" width="30%">Date</td>
-						<td>June 2013</td>
-					</tr>
-					<tr>
-						<td class="strong">Client</td>
-						<td>Yum! Inc</td>
-					</tr>
-					<tr>
-						<td class="strong">Project</td>
-						<td>KFC Colonel's Club App</td>
-					</tr>
-					<tr>
-						<td class="strong">Services</td>
-						<td>Mobile Design, IA Strategy</td>
-					</tr>
-				</table>
-				<h5>Brief Overview</h5>
-				<p class="detail-overview">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras quis varius ante, at sollicitudin erat. Vivamus sem turpis, mattis ut adipiscing eget, varius venenatis metus. Quisque mollis eros vitae elit venenatis viverra. Nulla vulputate varius feugiat. Nunc nec quam malesuada, tristique metus vel, convallis felis. </p>
-				<p><a href="/casestudy/kfc" title="Read full case study">Read full case study ›</a></p>
-			</div>
+		<div class="row">
+			<% @our_work.each do |work| %>
+				<div class="col-md-4">
+					<div class="m-work">
+						<%= image_tag(work["image"], class: "m-work__image img-fluid") %>
+						<div class="m-work__caption">
+							<h5><%= link_to work["name"], work["url"], target: "_blank" %></h5>
+							<p class="text-muted"><%= work["description"] %></p>
+						</div>
+					</div>
+				</div>
+			<% end %>
 		</div>
 	</div>
 </section>
 
-<section class="vrg_clients">
+<section class="l-section l-section--light l-section--sm" id="ourwork">
 	<div class="container">
-		<div class="columns sixteen">
-			<span class="clients-title">Brands we've worked with</span>
-			<ul class="clients-list">
-				<li><a href="http://www.kfc.ca"><%= image_tag("brand-kfc.png", :width => "84px") %></a></li>
-				<li><a href="http://www.toyota.ca"><%= image_tag("brand-toyota.png", :width => "150px") %></a></li>
-				<li><a href="http://www.flightnetwork.com"><%= image_tag("brand-flightnetwork.png", :width => "173px") %></a></li>
-				<li><a href="http://www.monstercat.com"><%= image_tag("brand-monstercat.png", :width => "168px") %></a></li>
-			</ul>
+		<div class="row align-items-center">
+			<% @clients.each do |client| %>
+				<div class="col-md-2 col-4">
+					<div class="m-client">
+						<%= link_to image_tag(client["logo"], class: "img-fluid"), client["url"], target: "_blank" %>
+					</div>
+				</div>
+			<% end %>
 		</div>
 	</div>
 </section>
 
-<section class="vrg_contact" id="contact">
-	<div class="container">
-		<div class="columns sixteen">
-			<h2 class="textCentered heading textWhite">Contact</h2>
+<section class="l-section l-section--white l-section--sm" id="ourwork">
+	<div class="container text-center">
+		<div class="row">
+			<div class="col-md-12">
+				<h2 class="text-center">Contact</h2>
+			</div>
 		</div>
-		<div class="columns sixteen">
-			<p class="subheading textCentered textWhite">Got an idea, question or general inquiry? We can help. Drop us a line and we will be happy to chat!</p>
+		<div class="row">
+			<div class="col-md-12">
+				<p>Got an idea, question or general inquiry? We can help. Drop us a line and we will be happy to chat!</p>
+			</div>
 		</div>
 	</div>
 </section>

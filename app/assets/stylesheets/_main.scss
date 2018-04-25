@@ -1,9 +1,4 @@
-// Place all the styles related to the home controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
-
-
-/* #Layout
+/* #Layouts
 ================================================== */
 .l-section {
   @each $size, $value in $content-spacing {
@@ -25,6 +20,8 @@
   }
 }
 
+/* #Modules
+================================================== */
 .m-hero {
   text-align: center;
   &__logo {
@@ -53,18 +50,29 @@
   }
 }
 
-/* #Page
+.m-work {
+  margin-bottom: $spacer * 3;
+  &__image {
+    border-radius: $border-radius;
+    margin-bottom: $spacer * 1.5;
+  }
+  &__caption {
+    // TODO: Add styling
+  }
+}
+
+/* #Custom
 ================================================== */
 /* About us */
 .brokenheartBackground {
-  background: image_url("about-brokenhearts-frame.png") no-repeat center right;
+  background: image_url("about/about-brokenhearts-frame.png") no-repeat center right;
   background-size: 260px;
   height: 280px;
   width: 270px;
 }
 .brokenheartHeart {
   @extend .animated, .pulse, .infinite;
-  background: image_url("about-brokenhearts-heart.png") no-repeat center right;
+  background: image_url("about/about-brokenhearts-heart.png") no-repeat center right;
   float:right;
   width: 200px;
   height: 200px;
@@ -72,7 +80,7 @@
   background-size: 140px;
 }
 .creativemachinesBackground {
-  background: image_url("about-creativemachines.png") no-repeat right 36px;
+  background: image_url("about/about-creativemachines.png") no-repeat right 36px;
   background-size: 260px;
   position: relative;
   height: 310px;
@@ -84,7 +92,7 @@
   height:49px;
   top: 98px;
   left:12px;
-  background: image_url("about-creativemachines-pulley1.png") no-repeat center center;
+  background: image_url("about/about-creativemachines-pulley1.png") no-repeat center center;
   background-size:49px;
 }
 .creativemachinesPulley2 {
@@ -93,7 +101,7 @@
   height: 40px;
   top: 194px;
   left: 89px;
-  background: image_url("about-creativemachines-pulley1.png") no-repeat center center;
+  background: image_url("about/about-creativemachines-pulley1.png") no-repeat center center;
   background-size: 40px;
 }
 .bubbles {
@@ -145,31 +153,3 @@
     left: 93px;
   }
 }
-
-/* Work */
-#ourwork { position: relative;}
-#ourwork .columns.one { height: 210px;width:20px;}
-.work-items { display:none;}
-.work-items.current { display:block;}
-.work-item { margin: 0 0 70px 0;width:440px !important;cursor:pointer;}
-.preview { height: 200px;width:100%;position:relative;overflow:hidden;}
-.work-caption { width:100%;position:absolute;bottom:0px;left:0;background-color:rgba(0, 0, 0, 0.7);opacity:0;padding: 20px;box-sizing:border-box; }
-.work-caption p, .work-caption strong {font-size: 16px;color:#fff !important}
-.work-caption p { margin-bottom: 5px;}
-#ourwork .arrowLeft > svg > path {fill: #b6b6b6; }
-#ourwork .arrowLeft:hover > svg > path {fill: #959595; }
-#ourwork .arrowLeft { display:none;top:440px;}
-.work-detail { float:left;display:none;font-size:18px;}
-.work-detail table { margin-bottom: 30px;}
-.work-detail td { padding: 0 0 6px 0;}
-.work-detail td.strong { font-weight: 400;}
-.work-detail p.detail-overview { font-size: 17px;}
-.work-detail.current { display:block;}
-
-/* Clients */
-.clients-title { float: left;margin-right:20px;padding-top:1px;}
-.clients-list { display: inline;}
-.clients-list li:first-child { width: 100px}
-.clients-list li { float: left;margin: 0;width:200px;text-align:center}
-
-#aboutus li.current { display: block;}

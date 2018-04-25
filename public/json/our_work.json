@@ -1,0 +1,26 @@
+[
+  {
+    "image": "our_work/flightnetwork.png",
+    "name": "FlightNetwork",
+    "description": "The largest flight booking website in Canada needed a full suite of applications.",
+    "url": "https://flightnetwork.com"
+  },
+  {
+    "image": "our_work/toyota.png",
+    "name": "Toyota Canada",
+    "description": "Toyota Canada’s Corolla treasure hunt contest for both iOS and Facebook.",
+    "url": "https://toyota.ca"
+  },
+  {
+    "image": "our_work/monstercat.png",
+    "name": "Monstercat Media",
+    "description": "One of the fastest growing record labels for electronic music in Canada.",
+    "url": "https://monstercat.com"
+  },
+  {
+    "image": "our_work/kfc.png",
+    "name": "KFC Canada",
+    "description": "The Colonel's Club needed to branch out to mobile.",
+    "url": "https://kfc.ca"
+  }
+]
