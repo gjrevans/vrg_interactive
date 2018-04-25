@@ -1,33 +1,33 @@
 <header class="l-section l-section--primary l-section--lg l-section--home">
 	<div class="container">
-		<div class="row justify-content-center">
+		<div class="m-hero row justify-content-center">
 			<div class="col-md-8">
-				<%= image_tag("logo.svg", :class =>  "svg mb-3") %>
-				<h4 class="text-white">We are design and development consultants creating digital experiences.</h4>
+				<%= image_tag("logo.svg", class: "svg m-hero__logo") %>
+				<h4>We are design and development consultants creating digital experiences.</h4>
 			</div>
 		</div>
 	</div>
 </header>
 
-<nav class="l-section l-section--dark l-section--sm l-section--navigation">
+<nav class="l-section l-section--dark l-section--xs l-section--navigation js-fixed">
 	<div class="container">
 		<div class="m-navigation">
-			<%= image_tag("logo.svg", :class =>  "svg m-navigation__logo") %>
+			<%= image_tag("logo.svg", class: "svg m-navigation__logo") %>
 			<ul class="list-inline">
-				<li><a href="#">What We Do</a></li>
-				<li><a href="#">About Us</a></li>
-				<li><a href="#">Our Work</a></li>
-				<li><a href="#">Contact us</a></li>
+				<li class="list-inline-item"><a href="#whatwedo">What We Do</a></li>
+				<li class="list-inline-item"><a href="#aboutus">About Us</a></li>
+				<li class="list-inline-item"><a href="#ourwork">Our Work</a></li>
+				<li class="list-inline-item"><a href="#">Contact us</a></li>
 			</ul>
 		</div>
 	</div>
 </nav>
 
-<section class="l-section l-section--white l-section--lg">
+<section class="l-section l-section--white l-section--xl" id="whatwedo">
 	<div class="container">
 		<div class="row text-center justify-content-center">
 			<div class="col-md-8">
-				<h2 class="">What We Do</h2>
+				<h2>What We Do</h2>
 				<p>We help you build that positive experience right into your product. We provide creative services for multiple facets of the digital industry from mobile applications to web applications.</p>
 				<p>Reaching out to your potential customers is harder then it has ever been. We help you plan out your strategy to <span class="italic">attack</span>  from all flanks.</p>
 			</div>
@@ -35,53 +35,65 @@
 	</div>
 </section>
 
-<section class="vrg_aboutus" id="aboutus">
-	<div class="arrowLeft"><%= image_tag("arrowLeft.svg", :class =>  "svg") %></div>
+<section>
+
+</section>
+
+<section class="l-section l-section--info l-section--lg" id="aboutus">
 	<div class="container">
-		<div class="columns sixteen">
-			<h2 class="textCentered heading">About Us</h2>
+		<div class="row">
+			<div class="col-md-12">
+				<h2 class="text-center">About Us</h2>
+			</div>
 		</div>
-		<ul>
-			<li id="1">
-				<div class="columns sixteen brokenheartBackground">
-					<div class="brokenheartHeart animated pulse"></div>
-					<div class="columns nine">
-						<h3 class="bold">No More Broken Hearts</h3>
-						<p>What sets one designer or developer apart from the rest? We have chosen to deliver amazement, joy and craft, embraced by distinctive creativity.</p>
-						<p>You ask for the goods. We deliver the great. We are committed to exceeding your expectations, but not your budget.</p>
+		<!-- Row 1 -->
+		<div class="row align-items-center">
+			<div class="col-md-6">
+				<h3 class="bold">No More Broken Hearts</h3>
+				<p>What sets one designer or developer apart from the rest? We have chosen to deliver amazement, joy and craft, embraced by distinctive creativity.</p>
+				<p>You ask for the goods. We deliver the great. We are committed to exceeding your expectations, but not your budget.</p>
+			</div>
+			<div class="col-md-6">
+				<div class="brokenheartBackground m-auto">
+					<div class="brokenheartHeart"></div>
+				</div>
+			</div>
+		</div>
+		<!-- Row 2 -->
+		<div class="row align-items-center">
+			<div class="col-md-6 order-md-12">
+					<h3 class="bold">Creative Machines</h3>
+					<p>At VRG, we are less creative machines, and more creative producers of machinations, but in the nicest possible sense.</p>
+					<p> We scheme and conspire together, to design and devise intriguing strategies for our clients, and ultimately for their global user base. We <span class="italic">love</span> what we do!</p>
+			</div>
+			<div class="col-md-6 order-md-1">
+				<div class="m-auto creativemachinesBackground">
+					<div class="creativemachinesPulley1 animated rotateCW"></div>
+					<div class="creativemachinesPulley2 animated rotateCW"></div>
+					<div class="bubbles">
+						<div class="bubble"></div>
+						<div class="bubble"></div>
+						<div class="bubble"></div>
+						<div class="bubble"></div>
+						<div class="bubble"></div>
 					</div>
 				</div>
-			</li>
-			<li id="2">
-				<div class="columns sixteen">
-					<div class="columns nine">
-						<h3 class="bold">Creative Machines</h3>
-						<p>At VRG, we are less creative machines, and more creative producers of machinations, but in the nicest possible sense.</p>
-						<p> We scheme and conspire together, to design and devise intriguing strategies for our clients, and ultimately for their global user base. We <span class="italic">love</span> what we do!</p>
-					</div>
-					<div class="columns six creativemachinesBackground">
-						<div class="creativemachinesPulley1 animated rotateCW"></div>
-						<div class="creativemachinesPulley2 animated rotateCW"></div>
-						<div class="bubbles">
-							<div class="bubble1 animated animated.bubble1 fadeOutUp infinite"></div>
-							<div class="bubble2 animated fadeOutUp infinite"></div>
-							<div class="bubble3 animated animated.bubble3 fadeOutUp infinite"></div>
-							<div class="bubble4 animated animated.bubble4 fadeOutUp infinite"></div>
-							<div class="bubble5 animated animated.bubble5 fadeOutUp infinite"></div>
-						</div>
-					</div>
+			</div>
+		</div>
+		<!-- Row 3 -->
+		<div class="row align-items-center">
+			<div class="col-md-6">
+				<h3 class="bold">Storytellers</h3>
+				<p>Each story becomes a part of history. VRG's creations each tell a story of art borne from need, climaxing with flair and imagining.</p>
+				<p>Our client accolades and user experiences spur us on to even greater and higher plains of conceptual form. Let our next story become a part of your history.</p>
+			</div>
+			<div class="col-md-6">
+				<div class="brokenheartBackground m-auto">
+					<div class="brokenheartHeart"></div>
 				</div>
-			</li>
-			<li id="3">
-				<div class="columns nine">
-					<h3 class="bold">Storytellers</h3>
-					<p>Each story becomes a part of history. VRG's creations each tell a story of art borne from need, climaxing with flair and imagining.</p>
-					<p>Our client accolades and user experiences spur us on to even greater and higher plains of conceptual form. Let our next story become a part of your history.</p>
-				</div>
-			</li>
-		</ul>
+			</div>
+		</div>
 	</div>
-	<div class="arrowRight"><%= image_tag("arrowRight.svg", :class =>  "svg") %></div>
 </section>
 
 <section class="vrg_work" id="ourwork">
