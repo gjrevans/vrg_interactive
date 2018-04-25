@@ -51,14 +51,14 @@
 ================================================== */
 /* About us */
 .brokenheartBackground {
-  background: url("about-brokenhearts-frame.png") no-repeat center right;
+  background: image_url("about-brokenhearts-frame.png") no-repeat center right;
   background-size: 260px;
   height: 280px;
   width: 270px;
 }
 .brokenheartHeart {
   @extend .animated, .pulse, .infinite;
-  background: url("about-brokenhearts-heart.png") no-repeat center right;
+  background: image_url("about-brokenhearts-heart.png") no-repeat center right;
   float:right;
   width: 200px;
   height: 200px;
@@ -66,7 +66,7 @@
   background-size: 140px;
 }
 .creativemachinesBackground {
-  background: url("about-creativemachines.png") no-repeat right 36px;
+  background: image_url("about-creativemachines.png") no-repeat right 36px;
   background-size: 260px;
   position: relative;
   height: 310px;
@@ -78,7 +78,7 @@
   height:49px;
   top: 98px;
   left:12px;
-  background: url("about-creativemachines-pulley1.png") no-repeat center center;
+  background: image_url("about-creativemachines-pulley1.png") no-repeat center center;
   background-size:49px;
 }
 .creativemachinesPulley2 {
@@ -87,7 +87,7 @@
   height: 40px;
   top: 194px;
   left: 89px;
-  background: url("about-creativemachines-pulley1.png") no-repeat center center;
+  background: image_url("about-creativemachines-pulley1.png") no-repeat center center;
   background-size: 40px;
 }
 .bubbles {
