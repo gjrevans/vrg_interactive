@@ -43,6 +43,9 @@ body {
   &__subtitle {
     font-size: 3rem;
     font-weight: 700;
+    @include media-breakpoint-down(sm) {
+      font-size: 2rem;
+    }
   }
 }
 
@@ -98,7 +101,8 @@ body {
     margin: auto;
     width: 22rem;
     @include media-breakpoint-down(sm) {
-      margin-bottom: $spacer * 2;
+      width: 100%;
+      margin-bottom: $spacer * 3;
     }
   }
 }

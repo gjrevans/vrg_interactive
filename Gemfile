@@ -16,7 +16,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'jquery-rails'
 gem 'bootstrap', '~> 4.1.0'
 gem 'animate-rails'
-gem 'font-awesome-sass'
+gem 'font-awesome-sass', '~> 5.0.9'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
