@@ -1,3 +1,12 @@
+/* #Globals
+================================================== */
+$logo-height: 2rem;
+$nav-height: $logo-height + (2 * $spacer);
+
+body {
+  background: $primary;
+}
+
 /* #Layouts
 ================================================== */
 .l-section {
@@ -10,10 +19,20 @@
     &--#{$color} {
       background-color: $value;
       color: color-yiq(darken($value, 15%));
-      &:not(:last-of-type) {
-        border-bottom: 1px solid darken($value, 10%);
+      &--bordered {
+        border-top: 1px solid darken($value, 5%);
+        border-bottom: 1px solid darken($value, 5%);
+      }
+      .text-darken {
+        color: darken($value, 14%);
       }
     }
+  }
+  &--full {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - #{$nav-height});
   }
 }
 
@@ -21,8 +40,9 @@
 ================================================== */
 .m-hero {
   text-align: center;
-  &__logo {
-    width: 5rem;
+  &__subtitle {
+    font-size: 3rem;
+    font-weight: 700;
   }
 }
 
@@ -31,9 +51,11 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-
+  @include media-breakpoint-down(sm) {
+    justify-content: center;
+  }
   &__logo {
-    width: 3rem;
+    height: $logo-height;
   }
   ul {
     list-style: none;
@@ -47,14 +69,53 @@
   }
 }
 
-.m-work {
-  margin-bottom: $spacer * 3;
+.m-whatwedo {
+  &__item {
+    margin-bottom: $spacer * 3;
+  }
+  &__icon {
+    height: 10rem;
+    margin-bottom: 2rem;
+    img {
+      height: 100%;
+      transition: all 0.5s;
+      &:hover {
+        height: 10.5rem;
+      }
+    }
+  }
+}
+
+.m-aboutus {
+  &__item {
+    margin: $spacer * 1 0 $spacer * 5 0;
+    @include media-breakpoint-down(sm) {
+      text-align: center;
+    }
+  }
+  &__image {
+    display: block;
+    margin: auto;
+    width: 22rem;
+    @include media-breakpoint-down(sm) {
+      margin-bottom: $spacer * 2;
+    }
+  }
+}
+
+.m-ourwork {
+  margin-bottom: $spacer * 4;
   &__image {
     border-radius: $border-radius;
-    margin-bottom: $spacer * 1.5;
+  }
+  &__title {
+    color: darken($primary, 12%);
+    font-weight: 600;
   }
   &__caption {
-    // TODO: Add styling
+    text-align: center;
+    margin-top: $spacer * 2;
+    line-height: 1.5;
   }
 }
 
@@ -62,47 +123,50 @@
   margin-bottom: 3rem;
 }
 
+.m-contact {
+  &__title {
+    padding-top: $spacer * 2;
+    h1 {
+      font-weight: 700;
+      font-size: 3.5rem;
+    }
+  }
+  &__subtitle {
+    padding: $spacer * 2 0 $spacer * 1 0;
+  }
+  &__content {
+    padding: $spacer * 3 0;
+  }
+  &__email {
+    padding: $spacer * 1 0;
+  }
+}
+
 /* #Custom
 ================================================== */
-/* About us */
-.brokenheartBackground {
-  background: image_url("about/about-brokenhearts-frame.png") no-repeat center right;
-  background-size: 260px;
-  height: 280px;
-  width: 270px;
-}
-.brokenheartHeart {
-  @extend .animated, .pulse, .infinite;
-  background: image_url("about/about-brokenhearts-heart.png") no-repeat center right;
-  float:right;
-  width: 200px;
-  height: 200px;
-  margin: 40px 60px 0 0;
-  background-size: 140px;
-}
-.creativemachinesBackground {
-  background: image_url("about/about-creativemachines.png") no-repeat right 36px;
+.creative-machines-background {
+  background: image_url("about_us/creativemachines.png") no-repeat right 36px;
   background-size: 260px;
   position: relative;
   height: 310px;
   width: 270px;
 }
-.creativemachinesPulley1 {
+.creative-machines-pully-1 {
   position:absolute;
   width:49px;
   height:49px;
   top: 98px;
   left:12px;
-  background: image_url("about/about-creativemachines-pulley1.png") no-repeat center center;
+  background: image_url("about_us/creativemachines-pulley.png") no-repeat center center;
   background-size:49px;
 }
-.creativemachinesPulley2 {
+.creative-machines-pully-2 {
   position:absolute;
   width: 40px;
   height: 40px;
   top: 194px;
   left: 89px;
-  background: image_url("about/about-creativemachines-pulley1.png") no-repeat center center;
+  background: image_url("about_us/creativemachines-pulley.png") no-repeat center center;
   background-size: 40px;
 }
 .bubbles {
@@ -155,9 +219,15 @@
   }
 }
 
+/* #Helpers
+================================================== */
 .sticky-mc-stick-face {
   top: 0;
   z-index: -1;
   position: sticky;
   position: -webkit-sticky;
+}
+
+.text-white-muted {
+  color: rgba($white, 0.75);
 }

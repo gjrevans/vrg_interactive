@@ -1,23 +1,22 @@
-<header class="l-section l-section--primary l-section--xl sticky-mc-stick-face">
+<header class="l-section l-section--primary l-section--full sticky-mc-stick-face">
 	<div class="container">
 		<div class="m-hero row justify-content-center">
 			<div class="col-md-8">
-				<%= image_tag("logo.svg", class: "svg m-hero__logo") %>
-				<h4>We are design and development consultants creating digital experiences.</h4>
+				<h1 class="m-hero__subtitle text-darken">Design and development for the modern world.</h1>
 			</div>
 		</div>
 	</div>
 </header>
 
-<nav class="l-section l-section--dark l-section--xs l-section--navigation js-fixed">
+<nav class="l-section l-section--primary l-section--xs l-section--primary--bordered js-fixed">
 	<div class="container">
 		<div class="m-navigation">
-			<%= image_tag("logo.svg", class: "svg m-navigation__logo") %>
+			<%= link_to image_tag("logo.svg", class: "svg m-navigation__logo"), root_path %>
 			<ul class="list-inline d-none d-sm-inline">
-				<li class="list-inline-item"><a href="#whatwedo">What We Do</a></li>
-				<li class="list-inline-item"><a href="#aboutus">About Us</a></li>
-				<li class="list-inline-item"><a href="#ourwork">Our Work</a></li>
-				<li class="list-inline-item"><a href="#contact">Contact us</a></li>
+				<li class="list-inline-item"><a href="#whatwedo" class="text-white">What We Do</a></li>
+				<li class="list-inline-item"><a href="#aboutus" class="text-white">About Us</a></li>
+				<li class="list-inline-item"><a href="#ourwork" class="text-white">Our Work</a></li>
+				<li class="list-inline-item"><a href="#contact" class="text-white">Contact us</a></li>
 			</ul>
 		</div>
 	</div>
@@ -26,46 +25,60 @@
 <section class="l-section l-section--white l-section--xxl" id="whatwedo">
 	<div class="container">
 		<div class="row text-center justify-content-center">
-			<div class="col-md-8">
-				<h2>What We Do</h2>
-				<p>We help you build that positive experience right into your product. We provide creative services for multiple facets of the digital industry from mobile applications to web applications.</p>
-				<p>Reaching out to your potential customers is harder then it has ever been. We help you plan out your strategy to <span class="italic">attack</span>  from all flanks.</p>
+			<div class="col-lg-4">
+				<div class="m-whatwedo__item">
+					<div class="m-whatwedo__icon">
+						<%= image_tag("what_we_do/branding.svg") %>
+					</div>
+					<h3 class="text-darken">Branding</h3>
+					<p class="text-muted">Logo design, brand identity, business collateral and more.</p>
+				</div>
+			</div>
+			<div class="col-lg-4">
+				<div class="m-whatwedo__item">
+					<div class="m-whatwedo__icon">
+						<%= image_tag("what_we_do/code.svg") %>
+					</div>
+					<h3 class="text-darken">Development</h3>
+					<p class="text-muted">Website, mobile apps and beyond. We develop software that suprise and delights.</p>
+				</div>
+			</div>
+			<div class="col-lg-4">
+				<div class="m-whatwedo__item">
+					<div class="m-whatwedo__icon">
+						<%= image_tag("what_we_do/video.svg") %>
+					</div>
+					<h3 class="text-darken">Video</h3>
+					<p class="text-muted">If a picture is worth 1000 words, then video can change your world.</p>
+				</div>
 			</div>
 		</div>
 	</div>
 </section>
 
-<section class="l-section l-section--info l-section--md" id="aboutus">
+<section class="l-section l-section--info l-section--xxl" id="aboutus">
 	<div class="container">
-		<div class="row">
+		<div class="row text-center">
 			<div class="col-md-12">
-				<h2 class="text-center">About Us</h2>
+				<h2 class="text-darken mb-5">About Us</h2>
 			</div>
 		</div>
 		<!-- Row 1 -->
-		<div class="row align-items-center py-4">
-			<div class="col-md-6">
-				<h3 class="bold">No More Broken Hearts</h3>
-				<p>What sets one designer or developer apart from the rest? We have chosen to deliver amazement, joy and craft, embraced by distinctive creativity.</p>
-				<p>You ask for the goods. We deliver the great. We are committed to exceeding your expectations, but not your budget.</p>
+		<div class="m-aboutus__item row align-items-center">
+			<div class="col-md-6 order-md-12">
+				<%= image_tag("about_us/collaborative.svg", class: "m-aboutus__image") %>
 			</div>
-			<div class="col-md-6">
-				<div class="brokenheartBackground m-auto">
-					<div class="brokenheartHeart"></div>
-				</div>
+			<div class="col-md-6 order-md-1">
+				<h3 class="font-wight-bold">Focused & Collaborative</h3>
+				<p class="text-white-muted">You asked for the goods. We deliver the great. We are committed exceeding your expectations, but not your budget.</p>
 			</div>
 		</div>
 		<!-- Row 2 -->
-		<div class="row align-items-center py-4">
-			<div class="col-md-6 order-md-12">
-					<h3 class="bold">Creative Machines</h3>
-					<p>At VRG, we are less creative machines, and more creative producers of machinations, but in the nicest possible sense.</p>
-					<p> We scheme and conspire together, to design and devise intriguing strategies for our clients, and ultimately for their global user base. We <span class="italic">love</span> what we do!</p>
-			</div>
-			<div class="col-md-6 order-md-1">
-				<div class="m-auto creativemachinesBackground">
-					<div class="creativemachinesPulley1 animated rotateCW"></div>
-					<div class="creativemachinesPulley2 animated rotateCW"></div>
+		<div class="m-aboutus__item row align-items-center">
+			<div class="col-md-6">
+				<div class="m-auto creative-machines-background">
+					<div class="creative-machines-pully-1 animated rotateCW"></div>
+					<div class="creative-machines-pully-2 animated rotateCW"></div>
 					<div class="bubbles">
 						<div class="bubble"></div>
 						<div class="bubble"></div>
@@ -75,38 +88,49 @@
 					</div>
 				</div>
 			</div>
+			<div class="col-md-6">
+					<h3 class="font-wight-bold">Creative Machines</h3>
+					<p class="text-white-muted">We scheme and conspire together, to design and devise intriguing strategies for our clients, and ultimately for their global user base. We <span class="italic">love</span> what we do!</p>
+			</div>
 		</div>
 		<!-- Row 3 -->
-		<div class="row align-items-center py-4">
-			<div class="col-md-6">
-				<h3 class="bold">Storytellers</h3>
-				<p>Each story becomes a part of history. VRG's creations each tell a story of art borne from need, climaxing with flair and imagining.</p>
-				<p>Our client accolades and user experiences spur us on to even greater and higher plains of conceptual form. Let our next story become a part of your history.</p>
+		<div class="m-aboutus__item row align-items-center">
+			<div class="col-md-6 order-md-12">
+				<%= image_tag("about_us/storytellers.svg", class: "m-aboutus__image") %>
 			</div>
-			<div class="col-md-6">
-				<div class="brokenheartBackground m-auto">
-					<div class="brokenheartHeart"></div>
-				</div>
+			<div class="col-md-6 order-md-1">
+				<h3 class="font-wight-bold">Storytellers</h3>
+				<p class="text-white-muted">Each story becomes a part of history. VRG's creations each tell a story of art borne from need, climaxing with flair and imagining.</p>
+				<p class="text-white-muted">Our client accolades and user experiences spur us on to even greater and higher plains of conceptual form. Let our next story become a part of your history.</p>
 			</div>
 		</div>
 	</div>
 </section>
 
-<section class="l-section l-section--white l-section--md text-center text-sm-left" id="ourwork">
+<section class="l-section l-section--white l-section--xxl text-center text-sm-left" id="ourwork">
 	<div class="container">
-		<h2 class="text-center mb-4">Our Work</h2>
+		<div class="row text-center">
+			<div class="col-md-12">
+				<h2 class="text-darken mb-5">Our Work</h2>
+			</div>
+		</div>
 		<div class="row">
 			<% @our_work.each do |work| %>
 				<div class="col-md-4">
-					<div class="m-work">
-						<%= image_tag(work["image"], class: "m-work__image img-fluid") %>
-						<div class="m-work__caption">
+					<div class="m-ourwork">
+						<%= image_tag(work["image"], class: "m-ourwork__image img-fluid") %>
+						<div class="m-ourwork__caption">
 							<h5><%= link_to work["name"], work["url"], target: "_blank" %></h5>
 							<p class="text-muted"><%= work["description"] %></p>
 						</div>
 					</div>
 				</div>
 			<% end %>
+		</div>
+		<div class="row justify-content-center">
+			<div class="col-md-6">
+				<h4 class="text-darken m-ourwork__caption">we've done our job when you're excited about what we've built together...</h4>
+			</div>
 		</div>
 	</div>
 </section>
@@ -126,24 +150,27 @@
 	</div>
 </section> -->
 
-<section class="l-section l-section--dark l-section--md" id="contact">
+<section class="l-section l-section--primary l-section--xxl" id="contact">
 	<div class="container">
-		<h2 class="text-center">Contact Us</h2>
-		<div class="row justify-content-center">
+		<div class="row">
 			<div class="col-md-6">
-				<p class="text-center">Got an idea, question or general inquiry? We can help. Drop us a line and we will be happy to chat!</p>
-				<form>
-				  <div class="form-group">
-				    <label for="exampleInputEmail1">Email Address</label>
-				    <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="john@smith.com">
-				    <small class="form-text text-muted">We'll never share your email with anyone else.</small>
-				  </div>
-				  <div class="form-group">
-				    <label for="exampleInputPassword1">Message</label>
-				    <textarea type="textarea" class="form-control" placeholder="Tell us a little bit about your project..."></textarea>
-				  </div>
-			  	<button type="submit" class="btn btn-primary btn-block">Submit</button>
-			</form>
+				<div class="m-contact">
+					<div class="m-contact__title">
+						<h1 class="mb-3">Don't be shy,<br />Talk to us.</h1>
+						<h4 class="text-darken">We reply to everyone right away. See for yourself.</h4>
+					</div>
+				</div>
+
+				<div class="m-contact__content">
+					<div class="m-contact__email">
+						<small class="text-darken mb-1 font-weight-bold">NEW BUSINESS</small>
+						<h3><%= mail_to "steve@vrginteractive.com", "steve@vrginteractive.com", class: "text-white" %></h3>
+					</div>
+					<div class="m-contact__email">
+						<small class="text-darken mb-1 font-weight-bold">SAY HI</small>
+						<h3><%= mail_to "hello@vrginteractive.com", "hello@vrginteractive.com", class: "text-white" %></h3>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
