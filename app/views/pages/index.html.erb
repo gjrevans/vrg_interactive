@@ -116,21 +116,30 @@
 			</div>
 		</div>
 		<div class="row">
+			<div class="col-md-12">
+				<div class="collapse" id="workDetails">
+					<%= image_tag("our_work/aldo", class: "img-fluid") %>
+				</div>
+			</div>
+		</div>
+		<div class="row">
 			<% @our_work.each do |work| %>
-				<div class="col-md-4">
-					<div class="m-ourwork">
-						<%= image_tag(work["image"], class: "m-ourwork__image img-fluid") %>
-						<div class="m-ourwork__caption">
-							<h5><%= link_to work["name"], work["url"], target: "_blank" %></h5>
-							<p class="text-muted"><%= work["description"] %></p>
+				<div class="col-md-6 col-lg-4">
+					<div class="m-ourwork" data-toggle="collapse" data-target="#workDetails" role="button">
+						<div class="m-ourwork__image">
+							<%= image_tag(work["image"], class: "img-fluid") %>
+							<div class="m-ourwork__image__body">
+								<h5><%= link_to work["name"], work["url"], target: "_blank" %></h5>
+								<p class="mb-0"><%= work["description"] %></p>
+							</div>
 						</div>
 					</div>
 				</div>
 			<% end %>
 		</div>
-		<div class="row justify-content-center">
+		<div class="row justify-content-center mt-5 text-center">
 			<div class="col-md-6">
-				<h4 class="text-darken m-ourwork__caption">we've done our job when you're excited about what we've built together...</h4>
+				<h4 class="text-darken">we've done our job when you're excited about what we've built together...</h4>
 			</div>
 		</div>
 	</div>

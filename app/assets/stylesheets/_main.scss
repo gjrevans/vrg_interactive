@@ -108,18 +108,34 @@ body {
 }
 
 .m-ourwork {
-  margin-bottom: $spacer * 4;
+  background: $white;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 1rem 3rem;
+  border-radius: $border-radius;
+  transition: all 0.25s;
+  margin-bottom: $spacer * 2;
   &__image {
+    overflow: hidden;
+    position: relative;
     border-radius: $border-radius;
+    transition: all 0.25s;
+    &__body {
+      @extend .animated, .fadeIn;
+      display: none;
+      background: rgba(0, 0, 0, 0.75);
+      color: white;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: $spacer;
+    }
   }
-  &__title {
-    color: darken($primary, 12%);
-    font-weight: 600;
-  }
-  &__caption {
-    text-align: center;
-    margin-top: $spacer * 2;
-    line-height: 1.5;
+  &:hover {
+    box-shadow: rgba(0, 0, 0, 0.4) 0 1rem 3rem;
+    .m-ourwork__image__body {
+      cursor: pointer;
+      display: block;
+    }
   }
 }
 
