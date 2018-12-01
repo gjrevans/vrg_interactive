@@ -1,54 +1,54 @@
 [
   {
-    "image": "our_work/flightnetwork.jpg",
+    "image": "https://s3.amazonaws.com/vrg-interactive/flightnetwork.jpg",
     "name": "FlightNetwork",
     "description": "The largest flight booking website in Canada needed a full suite of applications.",
     "url": "https://flightnetwork.com"
   },
   {
-    "image": "our_work/aldo.jpg",
+    "image": "https://s3.amazonaws.com/vrg-interactive/aldo.jpg",
     "name": "Aldo",
     "description": "VRG worked with the leading producer of high quality footwear to help bring Aldo into the 21st century.",
     "url": "https://aldo.com"
   },
   {
-    "image": "our_work/toyota.jpg",
+    "image": "https://s3.amazonaws.com/vrg-interactive/toyota.jpg",
     "name": "Toyota Canada",
     "description": "Toyota Canada’s Corolla treasure hunt contest for both iOS and Facebook.",
     "url": "https://toyota.ca"
   },
   {
-    "image": "our_work/monstercat.jpg",
+    "image": "https://s3.amazonaws.com/vrg-interactive/monstercat.jpg",
     "name": "Monstercat Media",
     "description": "One of the fastest growing record labels for electronic music in Canada.",
     "url": "https://monstercat.com"
   },
   {
-    "image": "our_work/kfc.jpg",
+    "image": "https://s3.amazonaws.com/vrg-interactive/kfc.jpg",
     "name": "KFC Canada",
     "description": "The Colonel's Club needed to branch out to mobile.",
     "url": "https://kfc.ca"
   },
   {
-    "image": "our_work/pizzahut.jpg",
+    "image": "https://s3.amazonaws.com/vrg-interactive/pizzahut.jpg",
     "name": "Pizza Hut",
     "description": "Who doesn't love pizza?! VRG made it even easier to order online.",
     "url": "https://pizzahut.com"
   },
   {
-    "image": "our_work/running_room.jpg",
+    "image": "https://s3.amazonaws.com/vrg-interactive/running_room.jpg",
     "name": "The Running Room",
     "description": "VRG worked with the Running Room to modernize the homepage & mobile applicaiton.",
     "url": "https://runningroom.ca"
   },
   {
-    "image": "our_work/russian_standard.jpg",
+    "image": "https://s3.amazonaws.com/vrg-interactive/russian_standard.jpg",
     "name": "Russian Standard Vodka",
     "description": "Russia's Favourite vodka brand.",
     "url": "http://russianstandardvodka.com"
   },
   {
-    "image": "our_work/wallet_twist.jpg",
+    "image": "https://s3.amazonaws.com/vrg-interactive/wallet_twist.jpg",
     "name": "Wallettwist",
     "description": "Digital passes in your pocket.",
     "url": "https://kfc.wallettwist.com/"
