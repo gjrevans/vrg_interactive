@@ -34,7 +34,7 @@ $(function() {
 *  JS ScrollFix
 *  Fixes an element to the top of a page at a certain scroll height
 * *
-*  @author      Logit AI
+*  @author      VRG Interactive
 *  @copyright   Copyright (c) 2017
 *  @since       Version 1.0.0
 *

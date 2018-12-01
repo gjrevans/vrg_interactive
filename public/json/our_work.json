@@ -8,7 +8,7 @@
   {
     "image": "our_work/aldo.jpg",
     "name": "Aldo",
-    "description": "The leading producer of high quality footwear.",
+    "description": "VRG worked with the leading producer of high quality footwear to help bring Aldo into the 21st century.",
     "url": "https://aldo.com"
   },
   {
@@ -32,25 +32,25 @@
   {
     "image": "our_work/pizzahut.jpg",
     "name": "Pizza Hut",
-    "description": "Yum, its Pizza Hut.",
+    "description": "Who doesn't love pizza?! VRG made it even easier to order online.",
     "url": "https://pizzahut.com"
   },
   {
     "image": "our_work/running_room.jpg",
     "name": "The Running Room",
-    "description": "Toyota Canada’s Corolla treasure hunt contest for both iOS and Facebook.",
+    "description": "VRG worked with the Running Room to modernize the homepage & mobile applicaiton.",
     "url": "https://runningroom.ca"
   },
   {
     "image": "our_work/russian_standard.jpg",
     "name": "Russian Standard Vodka",
-    "description": "One of the fastest growing record labels for electronic music in Canada.",
-    "url": "https://monstercat.com"
+    "description": "Russia's Favourite vodka brand.",
+    "url": "http://russianstandardvodka.com"
   },
   {
     "image": "our_work/wallet_twist.jpg",
     "name": "Wallettwist",
     "description": "Digital passes in your pocket.",
-    "url": "https://kfc.ca"
+    "url": "https://kfc.wallettwist.com/"
   }
 ]

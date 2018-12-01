@@ -10,6 +10,7 @@ body {
 /* #Layouts
 ================================================== */
 .l-section {
+  overflow: hidden;
   @each $size, $value in $content-spacing {
     &--#{$size} {
       padding: $value 0 ;
