@@ -25,7 +25,7 @@ body {
         border-bottom: 1px solid darken($value, 5%);
       }
       .text-darken {
-        color: darken($value, 14%);
+        color: darken($value, 20%);
       }
     }
   }
@@ -34,6 +34,13 @@ body {
     align-items: center;
     justify-content: center;
     height: calc(100vh - #{$nav-height});
+  }
+  &__footer {
+    position: absolute;
+    text-align: center;
+    left: 0;
+    right: 0;
+    bottom: 1rem;
   }
 }
 
