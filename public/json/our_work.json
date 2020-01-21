@@ -52,5 +52,23 @@
     "name": "Wallettwist",
     "description": "Digital passes in your pocket.",
     "url": "https://kfc.wallettwist.com/"
+  },
+  {
+    "image": "https://s3.amazonaws.com/vrg-interactive/corlane_sporting_goods.jpg",
+    "name": "Corlane Sporting Goods",
+    "description": "Ecommerce platform, point of sales, seach engine optimization and content strategy development.",
+    "url": "https://corlanes.com/"
+  },
+  {
+    "image": "https://s3.amazonaws.com/vrg-interactive/ballistix.jpg",
+    "name": "Ballistix",
+    "description": "Ecommerce and admin platform for the creation of Custom Rifle Scope Turrets.",
+    "url": "https://ballistix.ca/"
+  },
+  {
+    "image": "https://s3.amazonaws.com/vrg-interactive/oak_clinic.jpg",
+    "name": "Oak Naturopathic Clinic",
+    "description": "Local Business SEO, website and brand devlopment and design.",
+    "url": "https://oakclinic.ca/"
   }
 ]

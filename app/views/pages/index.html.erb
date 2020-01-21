@@ -13,26 +13,21 @@
 </nav>
 
 <header class="l-section l-section--primary l-section--full sticky-mc-stick-face">
-	<div class="container">
-    <div class="d-flex align-items-center justify-content-center hero-wrapper">
-      <div class="hero-container">
-        <div class="sides side-1"></div>
-        <div class="sides side-2"></div>
-        <div class="sides side-3"></div>
-        <div class="sides side-4"></div>
-        <div class="sides side-5"></div>
-        <div class="sides side-6"></div>
-      </div>
-    </div>
-		<div class="m-hero row justify-content-center">
-			<div class="col-md-8">
-				<h1 class="m-hero__subtitle text-darken">Design and development for the modern world.</h1>
+	<div class="container text-center">
+		<div class="row justify-content-center">
+			<div class="col-md-12">
+				<h1 class="m-hero__subtitle text-darken">Digital Discovery, Development and Design</h1>
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <p class="text-white-muted">We help savvy business owners create beautiful, elegant, discoverable, high conversation online experiences.</p>
+          </div>
+        </div>
 			</div>
 		</div>
-	</div>
+  </div>
   <div class="l-section__footer">
     <div>
-      <p class="text-darken">Scroll Down</p>
+      <p class="text-darken font-italic">COME ON IN, SCROLL DOWN...</p>
       <%= icon("fas", "arrow-down", class: "animated bounce infinite text-darken mt-3") %>
     </div>
   </div>
@@ -46,33 +41,79 @@
       </div>
     </div>
 		<div class="row text-center justify-content-center">
-			<div class="col-lg-4">
-				<div class="m-whatwedo__item">
-					<div class="m-whatwedo__icon">
-						<%= image_tag("what_we_do/branding.svg") %>
-					</div>
-					<h3 class="text-darken">Branding</h3>
-					<p class="text-muted">Logo design, brand identity, business collateral and more.</p>
-				</div>
-			</div>
-			<div class="col-lg-4">
+      <div class="col-lg-6">
+        <div class="m-whatwedo__item">
+          <div class="m-whatwedo__icon">
+            <%= image_tag("about_us/collaborative.svg") %>
+          </div>
+          <h3 class="text-primary">Digital Discovery & SEO</h3>
+          <p class="text-muted">If you've ever used Google before, then you're familiar with the idea of page ranking. Plain and simply, we help businesses get to the first page on Google, Bing, and Yahoo so that they're seen first. We help establish your presence and a long term content strategy so that you obtain and keep your rank for years to come.</p>
+        </div>
+      </div>
+			<div class="col-lg-6">
 				<div class="m-whatwedo__item">
 					<div class="m-whatwedo__icon">
 						<%= image_tag("what_we_do/code.svg") %>
 					</div>
-					<h3 class="text-darken">Development</h3>
-					<p class="text-muted">Website, mobile apps and beyond. We develop software that suprise and delights.</p>
+					<h3 class="text-primary">Web Design & Development</h3>
+					<p class="text-muted">Website, mobile apps and beyond. We develop software that suprises and delights across all platforms and devices. Got an idea, just ask us about it -- we love chatting with excited entrepreneurs.</p>
 				</div>
 			</div>
+      <div class="col-lg-4">
+        <div class="m-whatwedo__item mb-5">
+          <div class="m-whatwedo__icon">
+            <%= image_tag("what_we_do/branding.svg") %>
+          </div>
+          <h3 class="text-primary">Branding & Design</h3>
+          <p class="text-muted">Logo design, brand identity, business collateral and more. We help our clients establish a beautiful, reproduceable and modern brand that will stand the test of time and attract new business.</p>
+        </div>
+      </div>
 			<div class="col-lg-4">
-				<div class="m-whatwedo__item">
+				<div class="m-whatwedo__item mb-5">
 					<div class="m-whatwedo__icon">
 						<%= image_tag("what_we_do/video.svg") %>
 					</div>
-					<h3 class="text-darken">Video</h3>
-					<p class="text-muted">If a picture is worth 1000 words, then video can change your world.</p>
+					<h3 class="text-primary">Video Production</h3>
+					<p class="text-muted">If a picture is worth 1000 words, then a great video can change the way you do business. Our world class video development team can help you create and express exactly what you want to say through this profoundly powerful medium.</p>
 				</div>
 			</div>
+
+      <div class="col-lg-4">
+        <div class="m-whatwedo__item mb-5">
+          <div class="m-whatwedo__icon">
+            <%= image_tag("about_us/storytellers.svg") %>
+          </div>
+          <h3 class="text-primary">Paid Search</h3>
+          <p class="text-muted">Standout above your competitors and do it affordably. We offer customized paid marketing support for Google, Facebook and other key paid search platforms.</p>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="m-whatwedo__item mb-5">
+          <div class="m-whatwedo__icon">
+            <%= image_tag("what_we_do/development.svg") %>
+          </div>
+          <h4 class="text-primary">Conversion Optimization</h4>
+          <p class="text-muted">Don't just drive traffic to your site, convert it. We help design and deploy optimized landing pages, experience improvments and more to help capture leads and the analytics you need to observe and improve your conversion.</p>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="m-whatwedo__item mb-5">
+          <div class="m-whatwedo__icon">
+            <%= image_tag("other/laptop.svg") %>
+          </div>
+          <h4 class="text-primary">Engaugement & Retargeting</h4>
+          <p class="text-muted">Your best clients are clients who have already bought from you. So, how do you get them to come back? We help design bespoke lead capture and reengaugement campaigns to ensure your customers keep coming back.</p>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="m-whatwedo__item mb-5">
+          <div class="m-whatwedo__icon">
+            <%= image_tag("other/games.svg") %>
+          </div>
+          <h4 class="text-primary">Loyalty Programs</h4>
+          <p class="text-muted">Reward your clients for their loyalty with points or in-house value that they can redeem as they continue to buy from you. And, we help you do it though your exisitng CMS or POS platform so that you're not introducing new work or overhead.</p>
+        </div>
+      </div>
 		</div>
 	</div>
 </section>
