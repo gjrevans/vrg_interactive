@@ -1,10 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <%
+      brand_title = "Design, Discovery, & Development Consultants | VRG Interactive"
+      brand_description = "We help savvy business owners create beautiful, discoverable, high conversion online experiences."
+    %>
     <meta charset="utf-8">
-    <title>VRG Interactive - Design, Development Consultants Toronto, Ontario</title>
-    <meta name="description" content="Design, Development Consultants Toronto, Ontario">
-    <meta name="author" content="Gordon Evans">
+    <title><%= content_for?(:title) ? content_for(:title) : brand_title %></title>
+    <meta name="description" content="<%= content_for?(:description) ? content_for(:description) : brand_title %>">
+    <meta name="author" content="VRG Interactive">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <%= render 'application/favicon' %>
 
@@ -15,6 +19,7 @@
   </head>
 
   <body>
+    <%= render partial: "layouts/navigation" %>
     <%= yield %>
   </body>
 </html>
