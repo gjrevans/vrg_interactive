@@ -1,14 +1,11 @@
 Rails.application.routes.draw do
   namespace :admin do
-    resources :users
-
     root to: "users#index"
+    resources :users
   end
 
-  devise_for :users
   # Base Routes
   root to: "pages#index"
-
-  # Sitemap
   resource :sitemap, only: :show
+  devise_for :users
 end
