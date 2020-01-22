@@ -19,6 +19,7 @@
   </head>
 
   <body>
+    <%= render partial: "layouts/flash", flash: flash %>
     <%= render partial: "layouts/navigation" %>
     <%= yield %>
   </body>

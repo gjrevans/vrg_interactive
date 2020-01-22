@@ -1,0 +1,13 @@
+<script type="text/javascript">
+	<% flash.each do |type, message| %>
+		$.notify({
+			// options
+			message: "<%= sanitize(message) %>"
+		},{
+			// settings
+			offset: 10,
+			delay: 5000,
+			type: "<%= notify_class_for(type) %>"
+		});
+	<% end %>
+</script>

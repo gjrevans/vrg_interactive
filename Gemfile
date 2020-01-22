@@ -17,6 +17,10 @@ gem 'jquery-rails'
 gem 'bootstrap', '~> 4.1.0'
 gem 'animate-rails'
 gem 'font-awesome-sass', '~> 5.0.9'
+gem 'pg'
+gem 'devise'
+gem 'bootstrap-growl-rails'
+gem "administrate"
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
@@ -35,7 +39,6 @@ end
 
 group :production do
   gem 'rails_12factor'
-  gem 'pg', '~> 0.21'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
